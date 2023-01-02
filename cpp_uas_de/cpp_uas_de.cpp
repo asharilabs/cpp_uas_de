@@ -73,8 +73,14 @@ int main()
                     cout << "pilihan anda: ";
                     cin >> p3;
                 }
-                else if (p2 == 2) {
-
+                else if (p2 == 2) { // terbaru p2
+                    system("cls");
+                    cout << "Cari berdasarkan jalan" << endl;
+                    cout << "1. AA2-1" << endl;
+                    cout << "2. AA2-2" << endl;
+                    cout << "5. Kembali ke menu sebelumnya" << endl;
+                    cout << "pilihan anda: ";
+                    cin >> p3;
                 }
                 else if (p2 == 3) {
 

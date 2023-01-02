@@ -6,6 +6,10 @@
 
 using namespace std;
 
+
+float KonversiSuhu(float, char, char);
+string KonversiNamaSuhu(char);
+
 int main()
 {
     // L A T I H A N   P R A  U A S
@@ -14,7 +18,37 @@ int main()
     //          1. masukkan nilai derajat suhu tersebut
     //          3. masukkan pilihan satuan suhu konversi yang dituju (C, R, F, K)
     //          4. OUTPUT: deskripsi konversi nilai
+    // input awal = 10 celcius
+    // konversi farenheit = 35 farenheit
     // jadikan 3 inputan tersebut menjadi parameter dari fungsi tersebut
+    
+    // input suhu
+    float suhu;
+    cin >> suhu;
+    // input derajat awal
+    char awal;
+    cout << "Ketik c untuk celcius" << endl;
+    cout << "Ketik r untuk celcius" << endl;
+    cout << "Ketik f untuk celcius" << endl;
+    cout << "Ketik k untuk celcius" << endl;
+    cout << "pilihan anda-awal: "; cin >> awal;
+
+    // inptu derajat akhir
+    char akhir;
+    cout << "Ketik c untuk celcius" << endl;
+    cout << "Ketik r untuk celcius" << endl;
+    cout << "Ketik f untuk celcius" << endl;
+    cout << "Ketik k untuk celcius" << endl;
+    cout << "pilihan anda-akhir: "; cin >> akhir;
+
+    float HasilKonversi = KonversiSuhu(suhu, awal, akhir);
+    
+    // deksripsi output
+    cout << "suhu yang diinputkan adalah " << suhu << " derajat " << 
+        KonversiNamaSuhu(awal) << endl;
+    cout << "hasil konversi ke " << akhir << " adalah " << HasilKonversi << " derajat " <<
+        akhir << endl;
+
     // -------------------------------------------------------------------------------
     // 
     // buatkan fungsi untuk mengolah data nilai UAS dari sekian banyak mahasiswa
@@ -46,6 +80,7 @@ int main()
         cout << " 1. AA" << endl;
         cout << " 2. AAA" << endl;
         cout << " 3. AAAA" << endl;
+
         cout << "pilihan anda: ";
         cin >> p1;
 
@@ -126,6 +161,32 @@ int main()
     //
 
     return 0;
+}
+
+float KonversiSuhu(float _nilai, char _stAwal, char _stAkhir) {
+
+    float keluaran = 0;
+
+
+
+    return keluaran;
+}
+
+string KonversiNamaSuhu(char _input) {
+    string hasil = "";
+
+    if (_input == 'c')
+    {
+        hasil = "Celcius";
+    }
+    else if (_input == 'r')
+    {
+        hasil = "Reamur";
+    }
+    else if (_input == 'f') hasil = "Farenheit";
+    else if (_input == 'k') hasil = "Kelvin";
+
+    return hasil;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -33,7 +33,7 @@ int main()
     // - jika memilih 'N' maka program end
     // - jika memilih selain 'Y' atau 'N' maka program akan menanyakan kembali untuk kembali ke menu utama
 
-    // testing aja
+    // testing aja ok ok
 
     int p1 = 0;
     int p2 = 0;

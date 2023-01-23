@@ -18,5 +18,13 @@
     <ClCompile Include="cpp_uas_de.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Korelasi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Korelasi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
